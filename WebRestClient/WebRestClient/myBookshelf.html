@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>我的书架</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/myBookshelf.css">
+</head>
+<body>
+	<!-- 导航条 -->
+	<nav class="navbar">
+		<div class="nav-menu">
+			<ul class="menu">
+				<li><a class="active" href="index.aspx">首页</a></li>
+			</ul>				
+		</div><!-- nav-menu -->
+
+		<form class="nav-search">
+			<input type="search" class="searchIn" placeholder="搜图书...">
+			<button class="search-logo"><img src="img/search2.png"></button>
+		</form>
+
+		<div class="nav-info">
+			<a href="myBookshelf.html" class="username">jdx</a>
+			<a href="myBookshelf.html" class="bookshelf">||&nbsp;&nbsp;&nbsp;我的书架</a>
+			<a href="Login.aspx" class="logout">[ 退 出 ]</a>
+		</div> <!-- nav-info-end -->
+	</nav>
+
+	<!-- 个人信息 -->
+	<div class="person-info">
+		<p>
+			<a href="#" class="name">jdx</a>
+		</p>
+		<p>
+			<a href="#" class="sex">女</a><img src="img/girl.png" id="sex-pic">
+		</p>
+		<p class="set">
+			<a href="#" class="edit">编辑个人主页</a>
+			<img class="set-icon" src="img/setting.png">
+		</p>
+		<div class="contact">
+			<p>
+				<span class="call-icon"></span>
+				联&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系：
+				<a href="#" class="num">123456</a></p>
+			<p>
+				<span class="address-icon"></span>
+				住&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：<a href="#"  class="address">无</a>
+			</p>
+			<p>
+				<span class="major-icon"></span>
+				年级专业：<a  href="#" class="major">19cs</a>
+			</p>
+		</div>
+	</div><!-- person-info-end -->
+
+
+	<!-- 求书选项卡 -->
+	<div class="card-btn">
+        <span title="sell-book" id="sell-btn" class="active">我的求购</span>
+		<p class="upload-icon"></p>
+		<a id="sell-upload" href="askUpload.html">上传书至求购点</a>
+		<a id="delete-book" href="#">删除二手书求购</a>
+	</div>
+    <!-- 我的书摊 -->
+	<div id="container">
+		<div id="sell-book">
+			<ul class="book-ul">
+				<li class="book-list">
+					<p class="book-pic">
+						<img src="img/book-list/article/2.jpg">
+					</p>
+					<h5 class="book-name">东京梦华录</h5>
+					<span class="edit-btn"></span>
+					<div class="book-detail">
+						<p>作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<span class="book-author">孟元老 著</span></p>
+						<p>出&nbsp; 版&nbsp;社：<span class="book-press">湖北图书出版社 </span></p>
+					</div>
+				</li>
+				<li class="book-list">
+					<p class="book-pic">
+						<img src="img/book-list/article/3.jpg">
+					</p>
+					<h5 class="book-name">红字</h5>
+					<span class="edit-btn"></span>
+					<div class="book-detail">
+						<p>作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<span class="book-author">纳撒尼尔 霍桑</span></p>
+						<p>出&nbsp; 版&nbsp;社：<span class="book-press">世界图书出版公司</span></p>
+					</div>
+				</li>
+				<li class="book-list">
+					<p class="book-pic">
+						<img src="img/book-list/article/4.jpg">
+					</p>
+					<h5 class="book-name">瓦尔登湖</h5>
+					<span class="edit-btn"></span>
+					<div class="book-detail">
+						<p>作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<span class="book-author">亨利 戴维 梭罗</span></p>
+						<p>出&nbsp; 版&nbsp;社：<span class="book-press">上海文艺出版公司</span></p>
+					</div>
+				</li>
+				<li class="book-list">
+					<p class="book-pic">
+						<img src="img/book-list/article/5.jpg">
+					</p>
+					<h5 class="book-name">神曲</h5>
+					<span class="edit-btn"></span>
+					<div class="book-detail">
+						<p>作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<span class="book-author">但丁</span></p>
+						<p>出&nbsp; 版&nbsp;社：<span class="book-press">北京燕山出版社</span></p>
+					</div>
+				</li>											
+			</ul>
+		</div><!-- sell-book-end-->			
+	</div> <!-- container-end -->
+
+	<footer>
+		<a href="#">@2021 二手书交易</a>
+		<a href="#">意见反馈&nbsp;&nbsp;&nbsp;联系我们&nbsp;&nbsp;&nbsp;隐私权声明&nbsp;&nbsp;&nbsp;使用条款</a>
+	</footer>
+	
+	<!-- javascript- -->
+	<script type="text/javascript" src="js/jquery-3.2.js"></script>
+	<script type="text/javascript" src="js/myBookshelf.js"></script>
+			
+</body>
+</html>
